@@ -51,7 +51,7 @@ params:
           url: "/blog"
   socialIcons: # optional
     - name: "Linkedin"
-      url: "www.linkedin.com/in/danielknezsevity"
+      url: "https://www.linkedin.com/in/danielknezsevity/"
     - name: "Github"
       url: "https://github.com/Deni90"
     - name: "Hackaday"
