@@ -56,6 +56,12 @@ params:
       url: "https://github.com/Deni90"
     - name: "Hackaday"
       url: "https://hackaday.io/projects/hacker/92567"
+  assets:
+    favicon: "favicon.ico"
+    favicon16x16: "favicon-16x16.png"
+    favicon32x32: "favicon-32x32.png"
+    apple_touch_icon: "apple-touch-icon.png"
+    android_chrome: "android-chrome-192x192.png"
 
 # Menu configuration
 menu:
