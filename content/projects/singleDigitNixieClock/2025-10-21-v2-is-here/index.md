@@ -104,3 +104,6 @@ To fix the issue, I added pull-up resistors to the CD4028 input pins so that the
 ## Case
 
 The case design remained unchanged, but the carbon flake finish has been improved a bit. Since the 3D-printed box was light grey, I needed to ensure every surface was fully covered with carbon. The good thing is, it is easy to fix gaps by adding a new layer of carbon and epoxy.
+
+A short video showing the final result:
+{{< video "nixie-clock-demo.mp4" "nixie clock demo" >}}
