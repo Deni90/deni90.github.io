@@ -21,9 +21,6 @@ Key features:
 - Programmable current limit *(250mA/Step)*
 - User-switchable output
 
-Huge thank you to **[PCBWay](https://www.pcbway.com)** for sponsoring this project!
-![TinyPPS PCB & SMD stencil](tinypps-pcbs-and-smd-stencil.webp)
-
 For a detailed look at the schematics, PCB design and firmware, visit the [GitHub repository](https://github.com/Deni90/tinyPPS).
 
 ## Idea
@@ -33,6 +30,16 @@ Everything started with buying a 15$ USB powered mini SMD hot plate that require
 **PPS 3.3V-21.0V - 5.0A 100W max** - tickled my brain. What is PPS? It turned out it is a neat USB-C feature. To be more precise, it is an advanced feature of the USB Power Delivery (USB PD) 3.0 standard that allows chargers to dynamically adjust voltage and current in real time. Unlike standard PD, which uses fixed voltage "steps" (e.g., 5V, 9V, 15V, 20V), PPS allows for fine-grained adjustments - typically in 20mV voltage increments and 50mA current steps.
 
 Knowing this, I came up with the idea of using USB PPS to build a small “lab” power supply as a proof of concept. Before jumping in to realization, I explored existing solutions and stumbled upon [PocketPD](https://github.com/CentyLab/PocketPD) by Centylab. Although it’s a great product, I wanted to add my own twist and use the project as a learning experience by implementing my own solution.
+
+## Sponsor time
+
+Huge thank you to **[PCBWay](https://www.pcbway.com)** for providing me PCBs and SMD stencil for free.
+![TinyPPS PCB & SMD stencil](tinypps-pcbs-and-smd-stencil.webp)
+
+PCBWay offers high-quality PCBs at affordable prices. The boards are ready to solder straight out of the box, with no leftover tabs that need to be sanded down.
+Ordering is super easy: just upload the Gerber files and select the desired parameters.
+
+What I like most is their customer support. They are quick to review orders and don’t just point out issues - they provide detailed explanations on how to address them. Whether it is about a missing Gerber file or out of capabilies issue. At the end, the outcome is always positive.
 
 ## Hardware
 
