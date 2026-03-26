@@ -15,7 +15,7 @@ cover:
 
 Key features:
 - Support for fixed PDO, PPS and AVS profiles
-- Operating voltage range: 3.3V to 31V
+- Output voltage range: 3.3V to 28V
 - Fine-grained voltage adjustment via PPS negotiation *(100mV/Step)*
 - Output current up to 5A *(charger and cable dependent)*
 - Programmable current limit *(250mA/Step)*
@@ -150,8 +150,7 @@ User inputs:
 - This little device turned out to be a great addition to my toolbox.
 - Soldering small packages is much easier than it looks at first glance.
 - During development, I discovered that the AP33772S and its older sibling, the AP33772, differ in their voltage and current step sizes. The older IC provides finer adjustments, which makes it better suited for a lab-style power supply.
-- The short-circuit protection is not working properly with the back-to-back NMOS switch. The issue may be due to the 30ms debounce time of the AP33772S, which allows the current to rise faster than the IC can react, causing the USB source’s protection to trigger. This can be solved with an ideal diode IC equipped with short circuit protection.
-    ![AP33772S Over Current Protection](ap33772s-ocp.png)
+- The device lacks short-circuit protection on VOUT. The datasheet of AP33772s doesn't mention anything related to this feature.
 - Inrush current handling is not implemented in this version and remains an area for future improvement.
 
 ## References
