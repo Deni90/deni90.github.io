@@ -11,15 +11,29 @@ cover:
   relative: true
 ---
 
-![TinyPPS](2026-02-08/tinyPPS.webp)
+![TinyPPS](2026-06-07/tinyPPS.webp)
 
-Key features:
-- Support for fixed PDO, PPS and AVS profiles
-- Output voltage range: 3.3V to 28V
-- Fine-grained voltage adjustment via PPS negotiation *(100mV/Step)*
-- Output current up to 5A *(charger and cable dependent)*
-- Programmable current limit *(250mA/Step)*
-- User-switchable output
+## Key features
+
+TinyPPS now takes advantage of pin-compatible USB PD sink ICs (AP33772 and AP33772S), providing two feature sets within a single firmware, depending on the selected IC:
+
+| Feature | With AP33772s | With AP33772 |
+| - | - | - |
+| Supported PDO profiles | fixed PDO, PPS | fixed PDO, PPS |
+| Output voltage range | 3.3 - 21V | 3.3 - 21V |
+| Max output current* | 5A | 5A |
+| PPS voltage step size | 100mV/Step | 20mV/Step |
+| Programmable current limit | 250mA/Step | 50mA/Step |
+| User-switchable output | ✅ | ✅ |
+| Over Voltage Protection (OVP) | ✅ → Hard Reset and Auto Restart | ✅ → Auto Restart |
+| Over Current Protection (OCP) | ✅ → Output Disable | ✅ → Auto Restart |
+| Under Voltage Protection (UVP) | ✅ → Output Disable | ❌ |
+| Over temperature protection (OTP)** | ✅ → Output Disable | ✅ → Output Disable |
+| Short-Circuit Protection (SCP) | ✅ → Output Disable | ✅ → Output Disable |
+
+**charger and cable dependent*
+
+***OTP is set to 85°C*
 
 For a detailed look at the schematics, PCB design and firmware, visit the [GitHub repository](https://github.com/Deni90/tinyPPS).
 
