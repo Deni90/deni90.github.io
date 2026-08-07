@@ -11,7 +11,7 @@ cover:
   relative: true
 ---
 
-![TinyPPS](2026-06-07/tinyPPS.webp)
+![TinyPPS](fixes_improvements_and_new_features/tinyPPS.webp)
 
 ## Key features
 
